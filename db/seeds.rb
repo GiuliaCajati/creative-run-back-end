@@ -1,5 +1,5 @@
 
-#require 'json'
+require 'json'
 Drawing.destroy_all
 Marker.destroy_all
 
