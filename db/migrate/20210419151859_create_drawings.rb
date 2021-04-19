@@ -4,7 +4,7 @@ class CreateDrawings < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :category
       t.string :city
-      t.decimal :miles, :precision => 8, :scale => 2
+      t.decimal :total_miles, :precision => 8, :scale => 2
 
       t.timestamps
     end
