@@ -73,3 +73,5 @@ Marker.create(
     distance_from_prev: 0.6,
     drawing_id: elephant.id
 )
+
+
