@@ -11,28 +11,28 @@ elephant = Drawing.create(
 )
 
 Marker.create(
-    longitude: -77.1023047,
-    latitude: 38.8938729,
+    longitude: -77.102304,
+    latitude: 38.893872,
     place: 1,
     distance_from_prev: 2.7,
     drawing_id: elephant.id
 )
 Marker.create(
-    longitude: -77.062785,
-    latitude: 38.9051994,
+    longitude: -77.06278,
+    latitude: 38.905199,
     place: 2,
     distance_from_prev: 1.5,
     drawing_id: elephant.id
 )
 Marker.create(
-    longitude: -77.0494333,
-    latitude: 38.8882662,
+    longitude: -77.049433,
+    latitude: 38.888266,
     place: 3,
     distance_from_prev: 2.9,
     drawing_id: elephant.id
 )
 Marker.create(
-    longitude: -77.075463,
+    longitude: -77.07546,
     latitude: 38.895023,
     place: 4,
     distance_from_prev: 0.3,
@@ -46,8 +46,8 @@ Marker.create(
     drawing_id: elephant.id
 )
 Marker.create(
-    longitude: -77.0715526,
-    latitude: 38.8960175,
+    longitude: -77.071552,
+    latitude: 38.896017,
     place: 6,
     distance_from_prev: 1.0,
     drawing_id: elephant.id
@@ -68,7 +68,7 @@ Marker.create(
 )
 Marker.create(
     longitude: -77.092796,
-    latitude: 38.8938993,
+    latitude: 38.893899,
     place: 9,
     distance_from_prev: 0.6,
     drawing_id: elephant.id
