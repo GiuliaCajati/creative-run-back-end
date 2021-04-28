@@ -6,7 +6,6 @@ class Marker < ApplicationRecord
 
     # render a polyline for each marker 
     def add_polyline
-
         url = 'http://127.0.0.1:5000/route/v1/foot/'
         if self.place > 1 
             start = [self.longitude, self.latitude]
