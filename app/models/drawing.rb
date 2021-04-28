@@ -1,34 +1,32 @@
 require 'byebug'
 class Drawing < ApplicationRecord
     has_many :markers
-
-    # # for each drawing add add_polyline
-    # #initialize the class with the polyline
-    # def self.route_drawings 
-    #     byebug
-    #     drawing_markers = []
-    #     coordinates = []
-    #     # for every drawing get coordianates of all markers 
-
-    #     drawing_markers = self.all.map{ |d| (d.markers)} 
-    #     coordinates = drawing_markers.map{ |m| (m.longitude)}
-    #     byebug
-    # end
-      
-    # def find_connecting_marker
-    #     byebug
-    #     self.route_drawings.each{ |marker| find_connecting_marker(marker)} 
-    # end
-
-    # def find_connecting_markerm(marker)
-    #     byebug
-    # #     current_marker = marker
-    # #     if current_marker.place > 1 
-    # #         prev_marker = Marker.where(drawing_id: test.drawing_id, place: test.place+1)
-    # #         start = [  prev_marker.longitude , prev_marker.latitude ]
-    # #         finish = [ current_marker.longitude , current_marker.latitude ]
-    # #         add_polyline(start, finish)
-    # end
-
-
 end
+
+
+    # def self.itterate_drawings 
+    #     #for each drawing self.connect_all_markers
+    #     drawing = self.all
+    # end 
+
+    # def self.connect_all_markers
+    #     url = 'http://127.0.0.1:5000/route/v1/foot/'
+    #     polylines = []
+    #     markers = self.all
+    #     markers.each_with_index do | m, i | 
+    #         if markers[i].place > 1 
+    #             start = [markers[i-1].longitude, markers[i-1].latitude]
+    #             finish = [markers[i].longitude, markers[i].latitude]
+    #             url_start = start.join(',') 
+    #             url_finish = finish.join(',') 
+    #             url_coordinates = url_start + ';' + url_finish
+    #             step_request = url + url_coordinates + '?steps=true&alternatives=true'
+   
+    #             data = RestClient.get step_request
+    #             polylines.push(JSON.parse(data)["routes"][0]['legs'][0]['steps'][0]['intersections'].map{|int| int['location'] })
+    #         else 
+    #             next 
+    #         end 
+    #     end
+    #     return polylines
+    # end
