@@ -5,6 +5,8 @@ class DrawingsController < ApplicationController
         render json: @drawings.to_json({include: {markers: {methods: [:add_polyline]}}})
     end 
 
+    def 
+
 end
 
 

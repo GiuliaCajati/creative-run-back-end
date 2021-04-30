@@ -8,9 +8,6 @@ class MarkersController < ApplicationController
         render json: @markers.to_json
     end 
 
-    # def render_polylines
-    #     @markers = Marker.all.connect_all_markers#params[:coordinates]
-    #     render json: @markers.to_json   
-    # end
+
 
 end
