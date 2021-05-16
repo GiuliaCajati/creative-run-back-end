@@ -14,8 +14,8 @@ class MarkersController < ApplicationController
         @marker = Marker.find(params[:id])
         @marker.update(latitude: params[:coordinates][:lat], longitude: params[:coordinates][:lng])
         # @marker.drawing.update_attribute([:drawing_attribute])
-        render json:  @marker.to_json(methods: [:add_polyline])
-        # render json:  @marker.to_json(include: {drawing: { include: { markers: { methods: [:add_polyline] } } }})
+        # render json:  @marker.to_json(methods: [:add_polyline])
+        render json:  @marker.to_json(include: {drawing: { include: { markers: { methods: [:add_polyline] } } }})
     end 
 
 end

@@ -75,57 +75,103 @@ Marker.destroy_all
 # )
 
 
+# spacecraft = Drawing.create(
+#         name: 'Spacecraft',
+#         category:'Space',
+#         city:'Washington, DC',
+#         total_miles: 10.41,
+# )
+
+# Marker.create(
+#     longitude: -77.051473,
+#     latitude: 38.897923,
+#     place: 1,
+#     distance_from_prev: 0.6,
+#     drawing_id: spacecraft.id
+# )
+
+# Marker.create(
+#     longitude: -77.039481,
+#     latitude: 38.8921,
+#     place: 2,
+#     distance_from_prev: 0.6,
+#     drawing_id: spacecraft.id
+# )
+
+# Marker.create(
+#     longitude: -77.018585,
+#     latitude: 38.892393,
+#     place: 3,
+#     distance_from_prev: 0.6,
+#     drawing_id: spacecraft.id
+# )
+
+# Marker.create(
+#     longitude: -77.012325,
+#     latitude: 38.8906484,
+#     place: 4,
+#     distance_from_prev: 0.6,
+#     drawing_id: spacecraft.id
+# )
+
+# Marker.create(
+#     longitude: -77.019907,
+#     latitude: 38.887567,
+#     place: 5,
+#     distance_from_prev: 0.6,
+#     drawing_id: spacecraft.id
+# )
+
+# Marker.create(
+#     longitude: -77.0443408,
+#     latitude: 38.8861,
+#     place: 6,
+#     distance_from_prev: 0.6,
+#     drawing_id: spacecraft.id
+# )
+
 spacecraft = Drawing.create(
-        name: 'Spacecraft',
-        category:'Space',
-        city:'Washington, DC',
-        total_miles: 10.41,
+    name: 'Spacecraft',
 )
 
 Marker.create(
-    longitude: -77.051473,
-    latitude: 38.897923,
-    place: 1,
-    distance_from_prev: 0.6,
-    drawing_id: spacecraft.id
+longitude: -77.051473,
+latitude: 38.897923,
+place: 1,
+drawing_id: spacecraft.id
 )
 
 Marker.create(
-    longitude: -77.039481,
-    latitude: 38.8921,
-    place: 2,
-    distance_from_prev: 0.6,
-    drawing_id: spacecraft.id
+longitude: -77.039481,
+latitude: 38.8921,
+place: 2,
+drawing_id: spacecraft.id
 )
 
 Marker.create(
-    longitude: -77.018585,
-    latitude: 38.892393,
-    place: 3,
-    distance_from_prev: 0.6,
-    drawing_id: spacecraft.id
+longitude: -77.018585,
+latitude: 38.892393,
+place: 3,
+drawing_id: spacecraft.id
 )
 
 Marker.create(
-    longitude: -77.012325,
-    latitude: 38.8906484,
-    place: 4,
-    distance_from_prev: 0.6,
-    drawing_id: spacecraft.id
+longitude: -77.012325,
+latitude: 38.8906484,
+place: 4,
+drawing_id: spacecraft.id
 )
 
 Marker.create(
-    longitude: -77.019907,
-    latitude: 38.887567,
-    place: 5,
-    distance_from_prev: 0.6,
-    drawing_id: spacecraft.id
+longitude: -77.019907,
+latitude: 38.887567,
+place: 5,
+drawing_id: spacecraft.id
 )
 
 Marker.create(
-    longitude: -77.0443408,
-    latitude: 38.8861,
-    place: 6,
-    distance_from_prev: 0.6,
-    drawing_id: spacecraft.id
+longitude: -77.0443408,
+latitude: 38.8861,
+place: 6,
+drawing_id: spacecraft.id
 )
