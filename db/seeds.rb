@@ -135,17 +135,17 @@ spacecraft = Drawing.create(
 )
 
 Marker.create(
-longitude: -77.051473,
-latitude: 38.897923,
-place: 1,
-drawing_id: spacecraft.id
+    longitude: -77.051473,
+    latitude: 38.897923,
+    place: 1,
+    drawing_id: spacecraft.id
 )
 
 Marker.create(
-longitude: -77.039481,
-latitude: 38.8921,
-place: 2,
-drawing_id: spacecraft.id
+    longitude: -77.039481,
+    latitude: 38.8921,
+    place: 2,
+    drawing_id: spacecraft.id
 )
 
 Marker.create(
