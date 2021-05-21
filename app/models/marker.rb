@@ -4,7 +4,6 @@ require 'rest-client'
 class Marker < ApplicationRecord
     belongs_to :drawing  
 
-    # render polyline connecting each marker to prev marker 
     def add_polyline
         url = 'http://127.0.0.1:5000/route/v1/foot/'
         url_request = '?steps=true&alternatives=true'
@@ -16,13 +15,11 @@ class Marker < ApplicationRecord
             step_request = url + start_coordinates.join(',')  + ';' + end_coordinates.join(',') + url_request
             
             data = RestClient.get step_request
-            polyline = (JSON.parse(data)["routes"][0]['legs'][0]['steps'].map{|step| step['intersections'][0]['location']})
+            polyline = (JSON.parse(data)["routes"][0]["legs"][0]["steps"].map{|step| step["intersections"][0]["location"]})
             
             start_coordinates = [ prev_marker[0]['latitude'].to_f, prev_marker[0]['longitude'].to_f]
             end_coordinates = [  self.latitude.to_f, self.longitude.to_f ]
             [ start_coordinates ] + polyline.map{ |coordinates| [ coordinates[1] , coordinates[0] ]} + [ end_coordinates ] 
-            
-            #retun start and 
         end 
     end
 

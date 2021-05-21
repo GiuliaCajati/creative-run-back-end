@@ -1,3 +1,4 @@
+require 'byebug'
 class DrawingsController < ApplicationController
     
     def index 
@@ -7,7 +8,7 @@ class DrawingsController < ApplicationController
 
     def create
         @drawing = Drawing.create(name: params[:name])
-        render json: @drawings.to_json({ include: { markers: { methods: [:add_polyline] } } })
+        render json: @drawing.id.to_json()
     end 
 
 end

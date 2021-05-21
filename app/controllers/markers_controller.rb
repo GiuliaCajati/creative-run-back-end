@@ -18,4 +18,14 @@ class MarkersController < ApplicationController
         render json:  @marker.to_json(include: {drawing: { include: { markers: { methods: [:add_polyline] } } }})
     end 
 
+    def create 
+        byebug
+        @marker = Marker.create(
+            longitude: params[:longitude],
+            latitude: params[:latitude],
+            place: params[:place],
+            drawing_id: params[:drawingID])
+            render json:  @marker.to_json(include: {drawing: { include: { markers: { methods: [:add_polyline] } } }})
+    end 
+
 end
