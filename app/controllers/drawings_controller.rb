@@ -8,7 +8,8 @@ class DrawingsController < ApplicationController
 
     def create
         @drawing = Drawing.create(name: params[:name])
-        render json: @drawing.to_json()
+        byebug
+        render json: @drawing.to_json
     end 
 
 end
